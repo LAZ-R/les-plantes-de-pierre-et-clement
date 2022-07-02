@@ -9,7 +9,7 @@
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    height: 250px;
+    height: 230px;
     border-radius: 10px;
     box-shadow: #00000035 0 10px 20px;
     font-family: Roboto-Bold;
@@ -33,6 +33,7 @@
     min-width: 150px;
     height: 150px;
     margin: auto auto;
+    margin-bottom: 0;
     border-radius: 10px;
 }
 

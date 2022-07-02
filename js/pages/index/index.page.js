@@ -11,14 +11,24 @@ const renderView = () => {
     page.appendChild(document.createElement('h1')).innerHTML =
         'Salut !';
     page.appendChild(document.createElement('p')).innerHTML =
-        'Bienvenu sur ce site qui regroupe toutes nos plantes, ansi que des informations pour bien s\'en occuper';
+        'Bienvenue sur le site qui regroupe toutes nos plantes, ansi que des informations pour bien s\'en occuper';
+        page.appendChild(document.createElement('p')).innerHTML =
+        'Pour chaque plante sont documentés :' +
+        '<ul>'+
+            '<li>l\'origine</li>' +
+            '<li>l\'exposition lumineuse</li>' +
+            '<li>la température de conservation</li>' +
+            '<li>le type de substrat</li>' +
+            '<li>les taux d\'humidité (aérien et terrestre)</li>' +
+            '<li>les techniques de multiplication</li>' +
+        '</ul>';
 
     const plantsButton = document.createElement('button');
     plantsButton.setAttribute('class', 'primary-button');
     plantsButton.addEventListener('click', () => {
         window.open('./items.html', '_self');
     })
-    plantsButton.innerHTML = 'nos plantes';
+    plantsButton.innerHTML = 'Découvrir nos plantes';
 
     page.appendChild(plantsButton);
     

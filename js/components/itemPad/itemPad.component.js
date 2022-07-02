@@ -2,7 +2,6 @@ export const render = (item, route) => {
     const itemPad = document.createElement('a');
     itemPad.setAttribute('class', 'item-pad');
     itemPad.setAttribute('href', route);
-    console.log(item.photos.size);
     if (item.photos.length != 0) {
         itemPad.innerHTML = 
         '<div class="item-pad-image" style="background-image: url(./images/plants/' + item.photos[0] + ');" alt="item-depiction"></div>' +

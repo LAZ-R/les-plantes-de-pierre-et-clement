@@ -3,7 +3,7 @@ export const render = () => {
     const footer = document.createElement('footer');
     footer.innerHTML =
         '<div>' +
-            '&copy; ' + year + ' - v 1.0 - <a href="https://laz-r.github.io/">laz_R</a> - <a href="./about.html">About</a>' +
+            '&copy; ' + year + ' - v 1.1 - <a href="https://laz-r.github.io/">laz_R</a> - <a href="./about.html">About</a>' +
         '</div>';
 
     document.getElementById('body').appendChild(footer);

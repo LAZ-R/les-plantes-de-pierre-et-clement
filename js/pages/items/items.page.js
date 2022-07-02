@@ -13,8 +13,6 @@ const renderView = () => {
     const page = document.createElement('div');
     page.appendChild(document.createElement('h1')).innerHTML =
         pageTitle;
-    page.appendChild(document.createElement('p')).innerHTML =
-        'Voici la liste quasi complète des plantes que nous possédons.';
 
     const gridContainer = COMPONENT_ITEMS_GRID.render();
 
